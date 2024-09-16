@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Estimate Your Payment</h1>
+    <form id="mortgage-form">
+        <label>Purchase Price:</label>
+        <input type="number" id="purchase-price" placeholder="$">
+        <br>
+        <label>Down Payment:</label>
+        <input type="number" id="down-payment" placeholder="$">
+        <br>
+        <label>Interest Rate:</label>
+        <input type="number" id="interest-rate" placeholder="%">
+        <br>
+        <label>Term (Years):</label>
+        <input type="number" id="term" value="15">
+        <br>
+        <label>Monthly Home Insurance:</label>
+        <input type="number" id="home-insurance" placeholder="$">
+        <br>
+        <label>Monthly Property Tax:</label>
+        <input type="number" id="property-tax" placeholder="$">
+        <br>
+        <label>Fideicomiso:</label>
+        <input type="number" id="fideicomiso" value="50">
+        <br>
+        <label>Monthly Sub-Servicing:</label>
+        <input type="number" id="sub-servicing" value="65">
+        <br><br>
+        <button type="button" onclick="calculatePayment()">Estimate Payment</button>
+    </form>
+
+    <h2>Results:</h2>
+    <p id="loan-amount">Loan Amount: $</p>
+    <p id="monthly-payment">Estimated Monthly Payment: $</p>
+</body>
+
+<script src="script.js"></script>
+</html>
